@@ -1,70 +1,176 @@
-# Getting Started with Create React App
+# 🌐 Social Media App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-featured social media web application built with React, Redux, and Axios.
+Users can register, log in, create posts, upload images, and interact with others in real time.
+This project demonstrates my frontend development skills in building scalable and user-friendly applications.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+🚀 Live Demo
 
-### `npm start`
+👉 https://github.com/ahmednabil22224/social-media-app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 🚀 Features
 
-### `npm test`
+User Authentication – Register and log in using JWT tokens
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CRUD Posts – Create, read, update, and delete posts
 
-### `npm run build`
+Image Uploads – Upload and display images with posts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Responsive Design – Optimized for mobile and desktop screens
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Redux State Management – Centralized store for posts, users, and loading states
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Pagination / Infinite Scroll – Efficient post loading with smooth scrolling
 
-### `npm run eject`
+Form Validation – Client-side validation for login and registration forms
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Error Handling & Loading States – User-friendly error messages and spinners
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Protected Routes – Access control for authenticated users only
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🛠️ Tech Stack
 
-## Learn More
+Frontend:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React (Hooks, React Router)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Redux / Redux Toolkit
 
-### Code Splitting
+Axios (API communication)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React Virtuoso (infinite scrolling)
 
-### Analyzing the Bundle Size
+Tailwind CSS (styling)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Multer for file uploads
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 📦 Installation & Setup
 
-### Advanced Configuration
+1. **Clone the repository:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   git clone https://github.com/ahmednabil22224/social-media-app.git
 
-### Deployment
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Install dependencies:
+   npm install
 
-### `npm run build` fails to minify
+3. Add environment variables:
+   Create a .env file in the root folder and include your API base URL:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. REACT_APP_API_URL=https://localhost:5000/api/v1
+
+5. Run server:
+   node server
+
+6. Run the app:
+   npm start
+
+7. Open http://localhost:3000
+   in your browser.
+
+---
+
+# 🌍 Deployment
+
+The app is fully deployable on Vercel, Netlify, or any static hosting provider.
+
+Example deployment commands for Vercel:
+
+npm run build
+vercel deploy
+
+Make sure your backend API is publicly accessible if hosted separately (e.g., Render, Railway, or Heroku).
+
+---
+
+# 📁 Folder Structure
+
+```
+src/
+├── api/
+│   ├── api.jsx
+├── components/
+│   ├── Header.jsx
+│   ├── AddCommentForm.jsx
+│   ├── AddEditForm.jsx
+│   ├── AuthModal.jsx
+│   ├── LoadSpinner.jsx
+│   ├── NotFound.jsx
+├── features/
+│   └── auth/
+│       ├── Login.jsx
+│       ├── register.jsx
+│       posts/
+│       ├── Post.jsx
+│       ├── FullPosts.jsx
+│       ├── PostDetails.jsx
+│       ├── Profile.jsx
+│       ├── UserPosts.jsx
+├── hooks/
+│   ├── useAuth.js
+│   ├── useFormValidation.js
+├── redux/
+│   ├── reducerTypes.js
+│   ├── reducerActions.js
+│   ├── authReducers.js
+│   ├── postsReducer.js
+│   ├── rootCombines.js
+│   ├── store.js
+├── App.jsx
+├── index.jsx
+└── styles/
+    └── tailwind.css
+```
+
+---
+
+## 📸 Preview
+
+**Desktop View**
+![Desktop Preview](./src/images/preview-desktop.png)
+
+**Mobile View**
+![Mobile Preview](./src/images/preview-mobile.png)
+
+**Login View**
+![Tablet Preview](./src/images/preview-login.png)
+
+**Register View**
+![Tablet Preview](./src/images/preview-register.png)
+
+=======
+
+# 🧠 What I Learned
+
+Building scalable front-end architecture using React and Redux
+
+Implementing reusable hooks for validation, loading, and error handling
+
+Managing async requests with Redux Thunk / Redux Toolkit
+
+Creating responsive and user-friendly layouts
+
+Debugging and optimizing network requests
+
+---
+
+# 🧑‍💻 Author
+
+Ahmed Nabil
+Frontend Engineer passionate about building modern, scalable web applications.
+
+💼 LinkedIn
+
+🐙 GitHub
+
+✉️ Email: ahmednabil2222@gmail.com
