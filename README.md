@@ -136,11 +136,11 @@ src/
 
 ## 📸 Preview
 
-**Desktop View**
-![Desktop Preview](./src/images/preview-desktop.png)
-
 **Mobile View**
 ![Mobile Preview](./src/images/preview-mobile.png)
+
+**Desktop View**
+![Desktop Preview](./src/images/preview-desktop.png)
 
 **Login View**
 ![Login Preview](./src/images/preview-login.png)
