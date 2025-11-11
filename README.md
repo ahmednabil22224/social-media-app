@@ -150,6 +150,25 @@ src/
 
 =======
 
+---
+
+## 🌟 Lighthouse Report
+
+| Metric            | Score |
+| ----------------- | ----- |
+| ⚡ Performance    | 97%   |
+| ♿ Accessibility  | 100%  |
+| 🛡️ Best Practices | 100%  |
+| 🔍 SEO            | 100%  |
+
+images/lighthouse-report.png
+
+## ⚡ Lighthouse Report
+
+![Lighthouse Report](./src/images/lighthouse-report.png)
+
+---
+
 # 🧠 What I Learned
 
 Building scalable front-end architecture using React and Redux
