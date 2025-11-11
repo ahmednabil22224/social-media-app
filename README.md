@@ -143,10 +143,10 @@ src/
 ![Mobile Preview](./src/images/preview-mobile.png)
 
 **Login View**
-![Tablet Preview](./src/images/preview-login.png)
+![Login Preview](./src/images/preview-login.png)
 
 **Register View**
-![Tablet Preview](./src/images/preview-register.png)
+![Register Preview](./src/images/preview-register.png)
 
 =======
 
