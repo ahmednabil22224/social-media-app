@@ -26,7 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "clean": "rm -rf build",
+    "clean": "rimraf build",
     "start": "react-scripts start",
     "build": "npm run clean && react-scripts build",
     "test": "react-scripts test",
@@ -53,7 +53,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "rimraf": "^6.1.0"
   },
   "homepage": "https://ahmednabil22224.github.io/social-media-app"
 }

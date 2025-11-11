@@ -21,18 +21,18 @@ const useFormValidation = () => {
 
   const validate = () => {
     const errors = [];
-    // if (values?.username?.length < 6)
-    //   errors.push("Username must be at least 6 characters");
-    // if (!/[a-z]/.test(values?.password))
-    //   errors.push("Password must contain a small letter");
-    // if (!/[A-Z]/.test(values?.password))
-    //   errors.push("Password must contain a capital letter");
-    // if (!/[0-9]/.test(values?.password))
-    //   errors.push("Password must contain a digit");
-    // if (!/[!@#$&]/.test(values?.password))
-    //   errors.push("Password must contain a special char (!@#$&)");
-    // if (values?.password?.length < 8)
-    //   errors.push("Password must be at least 8 characters");
+    if (values?.username?.length < 6)
+      errors.push("Username must be at least 6 characters");
+    if (!/[a-z]/.test(values?.password))
+      errors.push("Password must contain a small letter");
+    if (!/[A-Z]/.test(values?.password))
+      errors.push("Password must contain a capital letter");
+    if (!/[0-9]/.test(values?.password))
+      errors.push("Password must contain a digit");
+    if (!/[!@#$&]/.test(values?.password))
+      errors.push("Password must contain a special char (!@#$&)");
+    if (values?.password?.length < 8)
+      errors.push("Password must be at least 8 characters");
     return errors;
   };
 
