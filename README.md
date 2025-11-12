@@ -148,8 +148,6 @@ src/
 **Register View**
 ![Register Preview](./src/images/preview-register.png)
 
-=======
-
 ---
 
 ## 🌟 Lighthouse Report
