@@ -8,7 +8,7 @@ This project demonstrates my frontend development skills in building scalable an
 
 🚀 Live Demo
 
-👉 https://github.com/ahmednabil22224/social-media-app
+👉 [https://github.com/ahmednabil22224/social-media-app](https://ahmednabil22224.github.io/social-media-app/)
 
 ---
 
