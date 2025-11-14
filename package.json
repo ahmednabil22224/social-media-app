@@ -55,6 +55,5 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "rimraf": "^6.1.0"
-  },
-  "homepage": "https://ahmednabil22224.github.io/social-media-app"
+  }
 }
