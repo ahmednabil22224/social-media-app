@@ -138,7 +138,7 @@ src/
 
 **Mobile View**
 <div align="center">
-  <img src="./images/preview-mobile.png" width="400" alt="Mobile Screenshot" />
+  <img src="./src/images/preview-mobile.png" width="400" alt="Mobile Screenshot" />
 </div>
 
 **Desktop View**
