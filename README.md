@@ -137,7 +137,9 @@ src/
 ## 📸 Preview
 
 **Mobile View**
-![Mobile Preview](./src/images/preview-mobile.png)
+<div align="center">
+  <img src="./images/preview-mobile.png" width="400" alt="Mobile Screenshot" />
+</div>
 
 **Desktop View**
 ![Desktop Preview](./src/images/preview-desktop.png)
