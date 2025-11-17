@@ -192,4 +192,4 @@ Frontend Engineer passionate about building modern, scalable web applications.
 
 🐙 GitHub
 
-✉️ Email: ahmednabil2222@gmail.com
+✉️ Email: ahmednabil22224@gmail.com
