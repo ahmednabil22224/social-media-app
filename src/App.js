@@ -11,7 +11,6 @@ import { AddEditForm } from "./components/AddEditForm";
 import { AuthModal } from "./components/AuthModal";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useAuth } from "./hooks/useAuth";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
