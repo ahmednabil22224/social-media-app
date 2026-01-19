@@ -19,6 +19,10 @@ const useFormValidation = () => {
     });
   }
 
+  function handleDemoUser(){
+    setValues({...values, username:"demo00", password:"11111!aA"})
+  }
+
   const validate = () => {
     const errors = [];
     if (values?.username?.length < 6)
