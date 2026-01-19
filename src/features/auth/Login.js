@@ -56,6 +56,7 @@ const Login = ({ onClose, showModal }) => {
             title="Password must be at least 8 letters contain small, capital letter, digits and one of [!@#$&]"
             onChange={handleChange}
           />
+          <p className="text-sm mb-2 text-orange-500">Use demo to explore the app without Register or Login</p>
           {errors && <p className="text-red-500">{errors[0]}</p>}
           <div className="flex gap-2">
             <button
