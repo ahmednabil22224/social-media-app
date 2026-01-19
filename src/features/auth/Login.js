@@ -4,7 +4,7 @@ import { useAuth } from "../../hooks/useAuth";
 
 const Login = ({ onClose, showModal }) => {
   const { login, loading } = useAuth();
-  const { values, errors, setErrors, handleChange, handleSubmit } =
+  const { values, errors, setErrors, handleChange, handleSubmit, handleDemoUser } =
     useFormValidation();
 
   async function loginUser() {
@@ -50,13 +50,22 @@ const Login = ({ onClose, showModal }) => {
             onChange={handleChange}
           />
           {errors && <p className="text-red-500">{errors[0]}</p>}
-          <button
-            className="bg-blue-500 text-white text-xl font-bold py-2 w-full rounded-lg"
-            type="submit"
-            aria-label="Submit Login"
-            tabIndex="0">
-            Log in
-          </button>
+          <div className="flex gap-2">
+            <button
+              className="bg-blue-500 text-white text-xl font-bold py-2 w-full rounded-lg"
+              type="submit"
+              aria-label="Submit Login"
+              tabIndex="0">
+              Log in
+            </button>
+            <button
+              className="bg-violet-500 text-white text-xl font-bold py-2 w-full rounded-lg"
+              aria-label="Submit Login As Demo"
+              tabIndex="0"
+              onClick={handleDemoUser}>
+                Demo
+            </button>
+          </div>
         </form>
         <p className="my-4 text-xl">
           <a className="text-blue-700" href="#">
