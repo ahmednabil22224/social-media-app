@@ -19,8 +19,9 @@ const useFormValidation = () => {
     });
   }
 
-  function handleDemoUser() {
-    setValues({ ...values, username: "demo00", password: "11111!aA" });
+
+  function handleDemoUser(){
+    setValues({...values, username:"demo00", password:"11111!aA"})
   }
 
   const validate = () => {
@@ -57,6 +58,6 @@ const useFormValidation = () => {
     handleSubmit,
     handleDemoUser,
   };
-};
+}
 
 export default useFormValidation;

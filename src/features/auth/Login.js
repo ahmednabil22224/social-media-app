@@ -3,7 +3,8 @@ import useFormValidation from "../../hooks/useFormValidation";
 import { useAuth } from "../../hooks/useAuth";
 
 const Login = ({ onClose, showModal }) => {
-  const { login, loading } = useAuth();
+  const { login } = useAuth();
+
   const {
     values,
     errors,

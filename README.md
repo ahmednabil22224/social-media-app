@@ -7,8 +7,8 @@ This project demonstrates my frontend development skills in building scalable an
 ---
 
 🚀 Live Demo
-
-👉 https://github.com/ahmednabil22224/social-media-app
+ 
+👉 [https://github.com/ahmednabil22224/social-media-app](https://ahmednabil22224.github.io/social-media-app/)
 
 ---
 
@@ -137,7 +137,9 @@ src/
 ## 📸 Preview
 
 **Mobile View**
-![Mobile Preview](./src/images/preview-mobile.png)
+<div align="center">
+  <img src="./src/images/preview-mobile.png" width="400" alt="Mobile Screenshot" />
+</div>
 
 **Desktop View**
 ![Desktop Preview](./src/images/preview-desktop.png)
@@ -190,4 +192,4 @@ Frontend Engineer passionate about building modern, scalable web applications.
 
 🐙 GitHub
 
-✉️ Email: ahmednabil2222@gmail.com
+✉️ Email: ahmednabil22224@gmail.com
