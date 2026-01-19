@@ -49,7 +49,7 @@ const useFormValidation = () => {
     }
   };
 
-  return { values, errors, setErrors, handleChange, handleSubmit };
+  return { values, errors, setErrors, handleChange, handleSubmit, handleDemoUser };
 };
 
 export default useFormValidation;
