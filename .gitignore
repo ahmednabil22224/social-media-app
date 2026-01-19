@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+/build
 
 # misc
 .DS_Store
@@ -22,3 +23,5 @@ yarn-error.log*
 *.pdf
 *.zip
 *.env
+.vercel
+.vscode

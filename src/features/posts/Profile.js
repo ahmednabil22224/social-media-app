@@ -26,6 +26,9 @@ export const Profile = () => {
     return <NotFound />;
   }
 
+  if (!userPosts || (userPosts.length === 0 && !isLoading))
+    return <div className="text-center text-red-500 mt-5">No posts found</div>;
+ 
   return (
     <>
       {error && (

@@ -19,6 +19,10 @@ const useFormValidation = () => {
     });
   }
 
+  function handleDemoUser() {
+    setValues({ ...values, username: "demo00", password: "11111!aA" });
+  }
+
   const validate = () => {
     const errors = [];
     if (values?.username?.length < 6)
@@ -45,7 +49,14 @@ const useFormValidation = () => {
     }
   };
 
-  return { values, errors, setErrors, handleChange, handleSubmit };
+  return {
+    values,
+    errors,
+    setErrors,
+    handleChange,
+    handleSubmit,
+    handleDemoUser,
+  };
 };
 
 export default useFormValidation;

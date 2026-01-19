@@ -4,8 +4,14 @@ import { useAuth } from "../../hooks/useAuth";
 
 const Login = ({ onClose, showModal }) => {
   const { login, loading } = useAuth();
-  const { values, errors, setErrors, handleChange, handleSubmit } =
-    useFormValidation();
+  const {
+    values,
+    errors,
+    setErrors,
+    handleChange,
+    handleSubmit,
+    handleDemoUser,
+  } = useFormValidation();
 
   async function loginUser() {
     let body = {
@@ -50,18 +56,27 @@ const Login = ({ onClose, showModal }) => {
             onChange={handleChange}
           />
           {errors && <p className="text-red-500">{errors[0]}</p>}
-          <button
-            className="bg-blue-500 text-white text-xl font-bold py-2 w-full rounded-lg"
-            type="submit"
-            aria-label="Submit Login"
-            tabIndex="0">
-            Log in
-          </button>
+          <div className="flex gap-2">
+            <button
+              className="bg-blue-500 text-white text-xl font-bold py-2 rounded-lg flex-1"
+              type="submit"
+              aria-label="Submit Login"
+              tabIndex="0">
+              Log in
+            </button>
+            <button
+              className="bg-violet-500 text-white text-xl font-bold py-2 px-2 rounded-lg"
+              aria-label="Submit Login As Demo"
+              tabIndex="0"
+              onClick={handleDemoUser}>
+              Demo
+            </button>
+          </div>
         </form>
         <p className="my-4 text-xl">
-          <a className="text-blue-700" href="#">
+          {/* <a className="text-blue-700" href="#">
             Forgotten account?
-          </a>
+          </a> */}
         </p>
         <div
           className="relative my-4 text-lg text-slate-500 before:absolute before:w-1/2 before:h-px before:bg-slate-400 before:top-1/2 before:-right-3
