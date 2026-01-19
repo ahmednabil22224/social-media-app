@@ -1,4 +1,4 @@
-export default {
+const reducerTypes = {
   POSTS_PENDING: "POSTS_PENDING",
   POSTS_SUCCESS: "POSTS_SUCCESS",
   POSTS_FAILED: "POSTS_FAILED",
@@ -12,3 +12,5 @@ export default {
   LOGIN_SUCCESS: "LOGIN_SUCCESS",
   LOGOUT: "LOGOUT",
 };
+
+export default reducerTypes;

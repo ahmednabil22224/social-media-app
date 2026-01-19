@@ -19,7 +19,7 @@ export const Header = () => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  });
+  }, [width]);
 
   async function loginUser() {
     let body = {
@@ -36,8 +36,7 @@ export const Header = () => {
 
   return (
     <div className="header sticky top-0 z-10  m-auto shadow-md bg-white max-w-screen-sm border-b-2 border-slate-300">
-      <div
-        className={`links flex justify-between items-center p-2 rounded-sm`}>
+      <div className={`links flex justify-between items-center p-2 rounded-sm`}>
         {isToken ? (
           <>
             <div className="flex items-center gap-3">
@@ -49,7 +48,7 @@ export const Header = () => {
                       ? user.profile_image
                       : defaultIcon
                   }
-                  alt="profileImg"
+                  alt="profile"
                 />
               </div>
 

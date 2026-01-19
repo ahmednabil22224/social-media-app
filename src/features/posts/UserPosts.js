@@ -14,7 +14,8 @@ export const UserPosts = () => {
     dispatch(getUserPosts(userId));
   }, [dispatch]);
 
-  if(!userPosts || userPosts.length === 0 && !isLoading) return <div className="text-center text-red-500 mt-5">No posts found</div>;
+  if ((!userPosts || userPosts.length === 0) && !isLoading)
+    return <div className="text-center text-red-500 mt-5">No posts found</div>;
 
   return (
     <>
