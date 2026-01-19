@@ -7,8 +7,8 @@ This project demonstrates my frontend development skills in building scalable an
 ---
 
 🚀 Live Demo
- 
-👉 [https://github.com/ahmednabil22224/social-media-app](https://ahmednabil22224.github.io/social-media-app/)
+
+👉 [https://social-media-app-nine-puce.vercel.app/](https://social-media-app-nine-puce.vercel.app)
 
 ---
 
@@ -137,6 +137,7 @@ src/
 ## 📸 Preview
 
 **Mobile View**
+
 <div align="center">
   <img src="./src/images/preview-mobile.png" width="400" alt="Mobile Screenshot" />
 </div>
