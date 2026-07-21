@@ -42,14 +42,14 @@ export const Header = () => {
             <div className="flex items-center gap-3">
               <div>
                 <img
-                  className="w-8"
-                  src={
-                    typeof user.profile_image === "string"
-                      ? user.profile_image
-                      : defaultIcon
-                  }
-                  alt="profile"
-                />
+                    className="w-8"
+                    src={user?.profile_image || defaultIcon}
+                    alt="profile"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = defaultIcon;
+                    }}
+                  />
               </div>
 
               <div className="text-xl">
